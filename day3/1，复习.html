@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>课堂学习</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    /*
+      git config --global user.name 用户名
+      git config --global user.email 用邮箱
+      git config -- list    查看详细信息
+
+
+      克隆：
+        git clone 远程仓库地址
+            1，可以使用git init，git remote add
+            2，git push和git pull时都可以不加后面的桥梁名和分支名
+
+      git init 把当前文件夹变成 git 仓库
+      git status 查看当前的修改状态
+            红色：代表在工作区的修改，还没有提交到缓存区
+            绿色：代表执行过git add . 已经把代码上传到缓存区
+      git add . 把当前文件夹下所有的修改都提交到缓存区
+      git add 文件(文件夹)名 只上传当前文件或文件夹
+      git commit -m '备注信息'  把代码从缓存区上传到历史区
+
+      以上都是在本地仓库操作
+
+
+      git remove -v 查看当前有哪些桥梁
+      git remove add 桥梁名 远程仓库地址     把本地仓库和远程仓库自定义的桥梁链接起来
+      git push 桥梁名 分支名      把本地仓库历史区的代码提交到远程仓库
+
+      git pull 桥梁名 分支名      把远程仓库的代码更新到本地仓库
+      执行 git pull 时需要注意有没有conflict；若有先去解决这些冲突，这些冲突时需要手动解决的
+
+      git checkout .    用缓存区的代码覆盖工作区的代码
+      git reset --hard （版本号）    不写版本号默认会退到上个版本，写上版本号，就会退到指定版本
+                                        用历史区的代码覆盖缓存区和工作区
+      git log       查看所有的历史版本的详细信息
+      git log -n    查看最近的n个的版本的详细信息
+      git reflog    查看历史版本的简要信息     这里显示的版本号是真正版本号的前7位
+      git diff      查看工作区和缓存区的区别
+      git diff --cached      查看缓存区和历史区的区别
+      git commit -a -m'备注'      前提是之前用过git add . 和 git commit -m'备注'
+
+
+
+      git branch    查看当前库的所有分支
+      git branch 分支名    在本地库新切一个分支   这个命令在哪个分支执行，那么新产生的分支的内容就和当前分支是一模一样(只在分支新产生的时候)的
+
+      git checkout 分支名      切换到新的分支名
+      git merge 分支名(nrc)         把nrc分支的内容合并到当前分支名
+      合并时也可能会产生冲突，也就是我们执行merge时，需要注意合并产生的冲突
+
+      怎么产生冲突：在一个分支上修改某个文件的一个地方，然后提交到历史区，然后切到另一个分支，在这个分支上修改同一个文件的同一个地方后再去提交，提交完成后merge上一个分支，这时就会产生冲突，当修改同一个文件的不同位置时，是不产生冲突的
+
+      sourceTree
+     */
+
+</script>
